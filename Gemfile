@@ -42,8 +42,16 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test] 
 
 # For heroku
 
 gem 'rails_12factor', group: :production
+
+group :development do
+	gem 'rspec-rails', '~> 3.0.0.beta'
+end
+
+group :test do
+	gem 'rspec', '~> 3.0.0.beta'
+end
