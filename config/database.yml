@@ -56,8 +56,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: rails_app_production
-  host: localhost
+  database: db0jeh4ge99qsm
+  host: ec2-54-204-43-200.compute-1.amazonaws.com
+  port: 5432
   pool: 5
-  username: root
-  password: pass
+  username: xcawiawuozvgdg
+  password: hLoY8sEul7xeJTlOWBafmXf4nP
