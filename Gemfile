@@ -46,7 +46,6 @@ end
 
 # For heroku
 
-gem 'rails_12factor', group: :production
 
 group :development do
 	gem 'rspec-rails', '~> 3.0.0.beta'
@@ -58,4 +57,5 @@ end
 
 group :production do
 	gem 'rails_serve_static_assets'
+	gem 'rails_12factor'
 end
