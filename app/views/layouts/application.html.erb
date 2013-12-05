@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-		<![endif]-->
 		<title><%= title %></title>
-		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
 		<%= csrf_meta_tags %>
-		<!--[if lt IE 8]>
-			<%= stylesheet_link_tag 'blueprint/ie' %>
-		<!--[endif]-->
-		<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+		<%= render 'layouts/stylesheets' %>
 	</head> 
 	<body>
 		<div class="container">
-		<header>
-			<%= image_tag("logo.jpg", :alt => "Sample Logo", :class => "round") %>
-			<nav class="round">
-				<ul>
-					<li><%= link_to "Home", "#" %></li>
-					<li><%= link_to "Help", "#" %></li>
-					<li><%= link_to "Sign", "#" %></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="round"><%= yield %></section>
-		
+			<%= render 'layouts/header' %>
+			<section class="round"><%= yield %></section>
+			<%= render 'layouts/footer' %>
 		</div>
 	</body>
 </html>

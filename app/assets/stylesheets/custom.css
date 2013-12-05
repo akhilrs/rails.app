@@ -22,3 +22,8 @@ color: #fff;background: #006400;font-size: 150%;font-weight: bold;padding: 20px;
 
 /* Round corners */
 .round{border-radius: 10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
+
+/* Footer */
+footer{text-align: center;margin-top: 10px; width: 710px;margin-right: auto;margin-left: auto;}
+
+footer nav{float: none;}
