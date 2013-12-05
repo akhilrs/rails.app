@@ -27,3 +27,5 @@ color: #fff;background: #006400;font-size: 150%;font-weight: bold;padding: 20px;
 footer{text-align: center;margin-top: 10px; width: 710px;margin-right: auto;margin-left: auto;}
 
 footer nav{float: none;}
+
+section h1{font-size: 200%}
