@@ -2,7 +2,9 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
-
+  before(:each) do
+    @base_title = "Rails.App"
+  end
   describe "GET 'home'" do
     it "returns http success" do
       get 'home'
@@ -10,7 +12,7 @@ describe PagesController do
     end
     it "should have a right title" do
       get "home"
-      expect(response).should have_selector("title", :content => "Rails.App | Home")
+      expect(response).should have_selector("title", :content => "#{@base_title} | Home")
     end
     it "should have a non-blank body" do
       get "home"
@@ -25,7 +27,7 @@ describe PagesController do
     end
     it "should have a right title" do
       get "contact"
-      expect(response).should have_selector("title", :content => "Rails.App | Contact")
+      expect(response).should have_selector("title", :content => "#{@base_title} | Contact")
     end
      it "should have a non-blank body" do
       get "contact"
