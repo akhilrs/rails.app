@@ -2,6 +2,7 @@ RailsApp::Application.routes.draw do
 
   root 'pages#home'
   get '/contact', :to => 'pages#contact'
+  get '/signup', :to => 'users#new'
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
